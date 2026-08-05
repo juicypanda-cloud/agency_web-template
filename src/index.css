@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+    background-color: #fff;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-white text-[#1a1a1a] font-sans antialiased selection:bg-black selection:text-white;
+  }
+
+  :where(a, button, input, textarea, select, summary, [role='button']):focus-visible {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 3px;
+  }
+
+  :where(.on-dark :is(a, button, input, textarea, select):focus-visible) {
+    outline-color: #fff;
+  }
+
+  h1, h2, h3, h4, .chanel-logo, .feed-logo {
+    font-family: var(--font-heading) !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.03em !important;
+    line-height: 0.95 !important;
+    text-transform: none !important;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-[11px] uppercase tracking-[0.15em] font-medium hover:opacity-50 transition-opacity duration-300;
+  }
+
+  .btn-luxury {
+    @apply px-8 py-3 border border-black text-[11px] uppercase tracking-[0.2em] font-medium hover:bg-black hover:text-white transition-all duration-500 inline-block;
+  }
+
+  .section-title {
+    @apply text-xl mb-8 border-b border-gray-100 pb-4;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    padding: 0.65rem 1rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1a1a1a;
+    border-radius: 9999px;
+    transform: translateY(-200%);
+    transition: transform 0.2s ease;
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  .hero-headline {
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55), 0 0 1px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-subline {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.65);
+  }
+
+  .contact-form-light :is(input, textarea) {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .contact-form-light :is(input, textarea):focus-visible {
+    outline: none;
+  }
+
+  .contact-form-light :is(input, textarea):-webkit-autofill,
+  .contact-form-light :is(input, textarea):-webkit-autofill:hover,
+  .contact-form-light :is(input, textarea):-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #1a1a1a;
+  }
+}
+
+/* Hide default viewport scrollbar; page still scrolls (wheel / trackpad / keys). */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}

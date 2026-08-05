@@ -1,0 +1,14 @@
+# Ten direct image URLs (one per line), matching public/images/posters/*.jpg names.
+# Sourced from Becoming Studio Framer portfolio + Colab55 (BE DIFFERENT).
+# Re-fetch: npm run fetch:posters
+
+https://framerusercontent.com/images/WXVfrlivcVn3lHvosKXncahxyM.png?width=2400
+https://framerusercontent.com/images/8sr4kfjpIM7VKvurgewqvpY689A.png?width=1920
+https://framerusercontent.com/images/bKwWPaqKMJ9W0kMYfzmMtTIgGU.jpeg?width=1920
+https://framerusercontent.com/images/XruYvyVgdNK2TlSLLEN6qgG474g.png?width=1920
+https://framerusercontent.com/images/GcoPJU0s5rnwVEYQHkQiPVhLFs.png?width=1920
+https://framerusercontent.com/images/Vju8W7eJHlmUzUKKTwObT8Ecfk.webp?width=1920
+https://framerusercontent.com/images/XruYvyVgdNK2TlSLLEN6qgG474g.png?width=2400
+https://cdn.colab55.com/images/55002/studio/product/135627/art/400750/posters.png
+https://framerusercontent.com/images/pnhnmJqvx7lx3e1AY8XDRF59o0.png?width=1920
+https://framerusercontent.com/images/rPQtu509h2oVvVqMjwxMIpFzKo0.png?width=1920

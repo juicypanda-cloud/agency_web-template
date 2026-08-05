@@ -1,0 +1,33 @@
+{
+  "name": "feed-2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:clean": "rm -rf node_modules/.vite && DISABLE_HMR=true VITE_NO_OPEN=1 vite --host 0.0.0.0 --port 3001 --strictPort",
+    "dev:preview": "npm run build && vite preview --host 0.0.0.0 --port 3001 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "compress:videos": "bash scripts/compress-videos.sh",
+    "fetch:posters": "bash scripts/fetch-site-images.sh",
+    "optimize:hero": "bash scripts/optimize-hero-posters.sh"
+  },
+  "dependencies": {
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-router-dom": "^7.15.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  }
+}
