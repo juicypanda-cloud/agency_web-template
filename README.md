@@ -1,4 +1,4 @@
-# Studio Nova — Creative Studio Template
+Creative Studio Template
 
 A responsive React/Vite website template for creative studios, agencies, freelancers, and portfolio-led brands. It includes an animated hero, service cards, a video reel, contact page, newsletter, optional analytics, and accessible navigation.
 
